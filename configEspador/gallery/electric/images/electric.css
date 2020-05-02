@@ -1,0 +1,276 @@
+body  {
+	background-color: fbeedb;
+	margin: 0; /* il est conseillé de mettre à zéro la marge et le remplissage de l'élément body, pour tenir compte des différentes valeurs par défaut des navigateurs */
+	padding: 0;
+	width:600px;
+	border-color:#333;
+	border-line-width: solid, 2px;
+	border-right-color:#CCC;
+	text-align: center; /* ce paramétrage centre le conteneur dans les navigateurs IE 5.x. Le texte est ensuite aligné à gauche (valeur par défaut) dans le sélecteur #container */
+	color: #FFF;
+	margin-top: 30px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	background-image: url(/pictures/pave_test.jpg);
+	background-repeat: no-repeat;
+}
+body,td,th {
+	color: #444;
+}
+.pictures_electric {
+	margin-top:155px;
+	color: #FF9;
+}
+
+/* Conseils pour la mise en page avec des éléments élastiques 
+1. La taille globale des éléments à mise en forme élastique étant basée sur la taille de police par défaut de l'utilisateur, l'aspect de ces éléments est relativement imprévisible. Utilisés correctement, ils sont toutefois plus accessibles pour les utilisateurs ayant besoin de polices de grande taille, puisque la longueur des lignes reste proportionnelle.
+2. Le dimensionnement des éléments div de cette mise en page est basé sur la taille de police 100 % dans l'élément body. Si vous réduisez la taille générale du texte en utilisant l'attribut font-size: 80% pour l'élément body ou le #container, n'oubliez pas que toute la mise en page sera proportionnellement réduite. Pour compenser ce risque, il est conseillé d'augmenter la largeur des divers éléments div.
+3. Si la taille de police est modifiée individuellement dans chaque élément div au lieu d'une modification globale (par ex. : la taille de police de #sidebar1 est réduite à 70 % et celle de #mainContent à 85 %), ce choix modifiera proportionnellement la taille globale de chaque élément div. Il est conseillé de modifier la taille de police en fonction de la taille de police finale.
+*/
+
+/* CSS Document */
+.head_logo {
+	position:absolute;
+	margin-left: 52px;
+	margin-top:36px;
+	left: 213px;
+	visibility: visible;
+	overflow: visible;
+	hspace:200px;
+	align: left;
+	margin-right: 20px;
+	start: mouseover;
+	width: 289px;
+	height: 98px;
+	top: -9px;
+}
+
+#navigation { /*conteneur du menu*/
+padding: 0;
+padding-right:100px;
+clear:both;
+margin-top:350px;
+margin-left:435px;
+width:768px;
+height:61px;
+background: 5b5e45;
+border: solid 1px #666;
+}
+
+ul.nav-main li { /*règles générales des items de liste */
+	list-style: none;
+	margin: 0;
+	width:150px;
+	color:#111;
+	font:070707;
+	border-right:solid 1px #666;
+	background-color:fbf935;
+	-moz-box-shadow:inset 0px 0px 25px -50px #2d3332;
+	-webkit-box-shadow:inset 0px 0px 25px -50px #2d3332;
+	box-shadow:inset 0px 0px 25px -50px #2d3332;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a7bab4), color-stop(1, #c5e0e0));
+	background:-moz-linear-gradient(top, #a7bab4 5%, #c5e0e0 100%);
+	background:-webkit-linear-gradient(top, #a7bab4 5%, #c5e0e0 100%);
+	background:-o-linear-gradient(top, #a7bab4 5%, #c5e0e0 100%);
+	background:-ms-linear-gradient(top, #a7bab4 5%, #c5e0e0 100%);
+	background:linear-gradient(to bottom, #a7bab4 5%, #c5e0e0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7bab4', endColorstr='#c5e0e0',GradientType=0);
+	border:2px solid #8fa39d;
+	display:inline-block;
+	cursor:pointer;
+	text-shadow:50px 50px 19px #b1e6de;
+}
+
+ul.nav-main { /*règles des items principaux*/
+	position: absolute;
+	z-index: auto;
+	left: 228px;
+	top: 133px;
+	width: 928px;
+	color:#111;
+}
+
+ul.nav-main li:hover { /*design des items de liste au survol*/
+	position: relative;
+	z-index: 590;
+	cursor: pointer;
+	background: a58080;
+	text-align: center;
+	width: 220px;
+	vertical-align:text-top;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c5e0e0), color-stop(1, #a7bab4));
+	background:-moz-linear-gradient(top, #c5e0e0 5%, #a7bab4 100%);
+	background:-webkit-linear-gradient(top, #c5e0e0 5%, #a7bab4 100%);
+	background:-o-linear-gradient(top, #c5e0e0 5%, #a7bab4 100%);
+	background:-ms-linear-gradient(top, #c5e0e0 5%, #a7bab4 100%);
+	background:linear-gradient(to bottom, #c5e0e0 5%, #a7bab4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5e0e0', endColorstr='#a7bab4',GradientType=0);
+	background-color:#c5e0e0;
+	color: #222;
+	font-size: 14px;
+	font-family: "Apple Chancery", Harrington, Helvetica, "Helvetica Light", "ITC Eras LT Medium", "Lucida Blackletter", "Lucida Bright", Helvetica, sans-serif, arial;
+}
+
+ul.nav-main li { /*positionnement, dimensions, couleurs et textes des items de liste*/
+	float:left;
+	display:block;
+	height: 35px;
+	color: #010;
+	font-family: "Apple Chancery", Harrington, Helvetica, "Helvetica Light", "ITC Eras LT Medium", "Lucida Blackletter", "Lucida Bright", Helvetica, sans-serif, arial;
+	font-size: 16px;
+}
+
+ul.nav-main li a { /*positionnement, dimensions, couleurs et textes des items de liste intégrant une redirection url*/
+	display: block;
+	height: 33px;
+	color: #999;
+	font: 16px Apple Chancery, Harrington, Helvetica, Helvetica Light, ITC Eras LT Medium, Lucida Blackletter, Lucida Bright, Helvetica, sans-serif, arial;
+	text-decoration:none;
+	padding-top: 10px;
+	padding-right: 16px;
+	padding-bottom: 0;
+	padding-left: 16px;
+}
+
+ul.nav-main li a:hover { /* couleurs des items de liste au survol*/
+	color:1b1b02;
+	font-size: 20px;
+	font-family: Apple Chancery, Harrington, Helvetica, Arial, Helvetica, sans-serif, arial;
+}
+#mainCenter {
+	height:100%;
+}
+
+#titleframe {
+	width: 100%;
+	/*height: 92px;*/
+	/*background-color: #CCCCCC;*/
+	
+}
+.selection{
+	margin-left:205px;
+	}
+#TopFrame {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+}
+
+#BottomFrame {
+	width: 200px;
+	height: 900px;
+	border: 0px;
+}
+
+a 			{ color: #CCCCCC; text-decoration: none; font-weight:normal;} 
+a:hover		{ color: #CCCCCC; text-decoration: underline; }
+
+.userAlert{
+	float:right;
+
+}
+
+
+/* title frame */
+
+.titleContent { padding: 6px 0 6px 6px; }
+
+.banner
+{
+	font-size: 12px;
+	font-family: Trebuchet MS, verdana, arial;
+	color: #CCCCCC;
+}
+
+.banner .title{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.banner .info{
+	font-size:0.9em;
+}
+
+.pagenums {
+	font-size:10px;
+	font-family: Trebuchet MS, verdana, arial;
+	color: #CCCCCC;
+}
+
+.banner .email{
+	font-weight:bold;
+}
+
+/* index frame */
+
+.indexContent {
+	width:95%;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+.indexInfo {
+	font-size: 11px;
+	font-family: Trebuchet MS, verdana, arial;
+	padding: 0 0 0 6px;
+}
+
+.indexInfo .filename {
+	color: #CCCCCC;
+}
+
+.indexInfo .date {
+	color: #CCCCCC;
+}
+
+/* file info */
+
+#imageInfo{
+	width: 461px;
+	font-family: Trebuchet MS, verdana, arial;
+	padding: 0 6px 0 6px;
+	color: #CCCCCC;
+}
+
+.content {
+	font-size:11px;
+	color: #CCCCCC;
+
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+.header{
+	font-size:9px;
+	font-weight:bold;
+	color: #CCCCCC;
+}
+
+.contentLast {
+	font-size:11px;
+/*	color: #CCCCCC;*/
+	padding-top:6px;
+}
+
+/* feedback */
+
+.feedback {
+	width: 461px;
+	font-family: Trebuchet MS, verdana, arial;
+	padding: 6px 6px 0 6px;
+}
+
+.checkBoxText
+{
+	font-size: 11px;
+	color: #CCCCCC;
+}
+.button {
+	font-weight:bold;
+	font-size: 11px;
+	color:#CCCCCC;
+	width:100%;
+	background-color:#D6BA8B;
+}
+	
+

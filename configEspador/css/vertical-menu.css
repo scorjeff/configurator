@@ -1,0 +1,74 @@
+
+/*ul, li {
+list-style-type:none;
+} */
+#menu{
+position: absolute;
+margin-top: 5%;
+margin-left: 35%;
+background:#3399ff;
+width: 85px;
+height: 50px;
+font-size: 1.2em;
+text-align: center;
+vertical-align: middle;
+}
+
+/*chaque sous-menu*/
+#menu ul li {
+position: relative;
+float:left;
+width: 85px;
+height: 65px;
+cursor:pointer;
+display:block;
+background:none;
+text-align: center;
+line-height: 45px;
+}
+ 
+/*carré déroulant sous un sous-menu niveau 1*/
+#menu ul li ul {
+display:none;
+position:absolute;
+width: 85px;
+height: 45px;
+border:1px solid #babdb6;
+border-top:none;
+top:42px;
+left:0;
+height:100%;
+font-size: 1em;
+text-align: center;
+line-height: 45px;
+}
+ 
+#menu ul li ul li {
+height:100%;
+}
+ 
+#menu ul li ul li a {
+color:#3399ff;
+font-size:1em;
+font-weight:normal;
+display:block;
+height:100%;
+border-top:1px solid #dddddd;
+}
+ 
+/*au passage de la souris on inverse les couleurs de la case*/
+#menu ul li ul li a:hover {
+color:#ffffff;
+background:#3399ff;
+}
+ 
+/*décalage des sous-menu niveau 2 vers la droite*/
+#menu ul li ul li ul {
+top:auto;
+left:85px;
+}
+ 
+/*décalage du sous-menu niveau 2 le plus à droite vers la gauche*/
+#menu ul li ul li ul.dernier {
+left:-127px;
+}
