@@ -1,14 +1,13 @@
+@charset "UTF-8";
 
 /*ul, li {
 list-style-type:none;
 } */
 #menu{
-position: absolute;
-margin-top: 5%;
-margin-left: 35%;
+margin-top: -15%;
 background:#3399ff;
 width: 85px;
-height: 50px;
+height: 45px;
 font-size: 1.2em;
 text-align: center;
 vertical-align: middle;
@@ -16,10 +15,10 @@ vertical-align: middle;
 
 /*chaque sous-menu*/
 #menu ul li {
-position: relative;
+	position: relative;
 float:left;
 width: 85px;
-height: 65px;
+height: 45px;
 cursor:pointer;
 display:block;
 background:none;
@@ -30,9 +29,9 @@ line-height: 45px;
 /*carré déroulant sous un sous-menu niveau 1*/
 #menu ul li ul {
 display:none;
-position:absolute;
-width: 85px;
-height: 45px;
+position: absolute;
+width: 55px;
+height: 20px;
 border:1px solid #babdb6;
 border-top:none;
 top:42px;
@@ -40,7 +39,7 @@ left:0;
 height:100%;
 font-size: 1em;
 text-align: center;
-line-height: 45px;
+line-height: 35px;
 }
  
 #menu ul li ul li {
@@ -64,11 +63,11 @@ background:#3399ff;
  
 /*décalage des sous-menu niveau 2 vers la droite*/
 #menu ul li ul li ul {
-top:auto;
-left:85px;
+top:0px;
+left:55px;
 }
  
 /*décalage du sous-menu niveau 2 le plus à droite vers la gauche*/
 #menu ul li ul li ul.dernier {
-left:-127px;
+left:95px;
 }
