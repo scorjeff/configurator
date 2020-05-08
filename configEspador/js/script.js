@@ -35,7 +35,7 @@ const colors = [
 
 
 
-const BACKGROUND_COLOR = 0xf1f1f1;
+const BACKGROUND_COLOR = 0xfff7af;
 // Init the scene
 const scene = new THREE.Scene();
 // Set background
